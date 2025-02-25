@@ -1,0 +1,62 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dreamsicle Orange to Soft Pink Gradient Background */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a3c, #ffb88c, #f8a5c2);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+        -2px -2px 0 #424242,  /* Orange stroke */
+        2px -2px 0 #424242,
+        -2px 2px 0 #424242,
+        2px 2px 0 #424242,
+        4px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle glow */
+    margin-bottom: 20px;
+    font-family: "Pacifico", cursive; /* Aesthetic Handwritten Font */
+}
+
+/* Image Container */
+.container {
+    width: 60%;
+    max-width: 600px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.15); /* Soft frosted glass effect */
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
