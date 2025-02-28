@@ -1,0 +1,40 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen background image */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Background Image */
+.background-image {
+    background: url('images/max.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Text Box */
+.text-box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
+}
