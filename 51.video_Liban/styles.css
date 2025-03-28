@@ -1,0 +1,32 @@
+/* Reset default margin, padding, and set box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the full screen video background */
+#backgroundVideo {
+  position: fixed;          /* Fix the video in place */
+  top: 0;                   /* Align the top edge to the top of the viewport */
+  left: 0;                  /* Align the left edge to the left of the viewport */
+  width: 100%;              /* Make the video span the full width */
+  height: 100%;             /* Make the video span the full height */
+  object-fit: cover;        /* Scale the video to cover the viewport without distortion */
+  z-index: -1;              /* Place the video behind any other content */
+}
+
+/* Style for the centered text box */
+.quote-box {
+  position: absolute;       /* Position it relative to the viewport */
+  top: 50%;                 /* Position 50% from the top */
+  left: 50%;                /* Position 50% from the left */
+  transform: translate(-50%, -50%); /* Center the element by offsetting it */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for contrast */
+  color: #fff;              /* White text color */
+  padding: 20px 30px;       /* Padding around the text */
+  border-radius: 10px;      /* Rounded corners for a softer look */
+  font-family: 'Georgia', serif; /* Aesthetic serif font */
+  text-align: center;       /* Center the text inside the box */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
