@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Set character encoding and viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title -->
+  <title>Random Video Swap</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Container for the video -->
+  <div class="video-container">
+    <!-- 
+         The video element initially loads videos/video.mp4.
+         It auto-plays, loops, and plays inline.
+         (After the first click, sound will be enabled.)
+    -->
+    <video id="videoPlayer" autoplay loop playsinline muted>
+      <source src="videos/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Clickable text box below the video that triggers video swapping -->
+  <div class="quote-box" id="quoteBox">
+    <p>IT'S BETTER TO BE LONELY THAN TO BE WITH INFERIOR PEOPLE</p>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
