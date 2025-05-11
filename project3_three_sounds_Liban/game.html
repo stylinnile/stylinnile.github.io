@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FINAL BOARDING: A high-stakes mid-air mystery</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="video-container">
+      <video id="player" preload="auto">
+        <source src="videos/intro.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <button id="playToggle" class="play-btn" aria-label="Play">▶️</button>
+    </div>
+
+    <div class="button-container hidden">
+      <button id="btn-elliot" class="btn btn-white">⚖️ ELLIOT CRANE</button>
+      <button id="btn-glen"   class="btn btn-blue">⚖️ GLEN BARRET</button>
+      <button id="btn-leo"    class="btn btn-red">⚖️ LEO BRAMBLE</button>
+      <button id="btn-sister" class="btn btn-black">⚖️ SISTER BERNICE</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

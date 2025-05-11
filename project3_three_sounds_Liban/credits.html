@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FINAL BOARDING: A high-stakes mid-air mystery</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- page-specific tweaks that piggy-back on your main CSS -->
+  <style>
+    /* Tighten subtitle under title, reuse glow */
+    .credits-wrap .title {
+      font-size: 3rem;
+      letter-spacing: 0.08ch;
+      background: linear-gradient(90deg, #f8f8f2, #ccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glowText 3s ease-in-out infinite alternate;
+      margin-bottom: 0.25rem;
+    }
+    .credits-wrap .subtitle {
+      margin-top: 0.25rem;
+      color: #e0e0e0;
+      font-size: 1.25rem;
+    }
+
+    /* Centered bullet lists like the start menu */
+    .credits-wrap ul {
+      list-style-position: inside;
+      display: inline-block;
+      text-align: left;
+      margin: 0 auto 0.75rem;
+      padding: 0;
+      max-width: 480px;
+      color: #ccc;
+    }
+    .credits-wrap li { margin: 0.25rem 0; }
+    .section { margin-top: 1.75rem; }
+    .section h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05ch;
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container credits-wrap">
+
+    <!-- Main heading -->
+    <h1 class="title">FINAL BOARDING</h1>
+    <p class="subtitle">Credits &amp; Epilogue</p>
+
+    <!-- Thank-you / meta note -->
+    <p class="description" style="margin-top:1.5rem;">
+      <em>Did you crack the case?</em><br>
+      In truth, every suspect’s ending was crafted as a “correct” answer.<br>
+      But one character was <strong>originally</strong> meant to be the canonical killer&hellip;<br>
+      Think you can figure out which one?
+    </p>
+    <br>
+
+    <!-- Primary credit -->
+    <div class="section">
+      <h2>Written • Directed • Edited</h2>
+      <ul><li><strong>Trevor&nbsp;Liban</strong></li></ul>
+    </div>
+
+    <!-- Cast -->
+    <div class="section">
+      <h2>Cast</h2>
+      <ul>
+        <li>Trevor Liban&nbsp;&mdash;&nbsp;Elliot Crane</li>
+        <li>Justin Inama&nbsp;&mdash;&nbsp;Glen Barrett</li>
+        <li>Darien Cooper&nbsp;&mdash;&nbsp;Leo Bramble</li>
+        <li>Marilyn Schnabl&nbsp;&mdash;&nbsp;Sister Bernice</li>
+        <li>Trevor Liban&nbsp;&mdash;&nbsp;Detective Hartley</li>
+      </ul>
+    </div>
+
+    <!-- Music licenses -->
+    <div class="section">
+      <h2>Music</h2>
+      <ul>
+        <li>&ldquo;Oppressive Gloom&rdquo;&nbsp;&mdash;&nbsp;Kevin MacLeod</li>
+        <li>&ldquo;Fast Talkin&rdquo;&nbsp;&mdash;&nbsp;Kevin MacLeod</li>
+        <li>&ldquo;Spy Glass&rdquo;&nbsp;&mdash;&nbsp;Kevin MacLeod</li>
+      </ul>
+      <p style="font-size:0.85rem; color:#888; max-width:500px; margin:0.5rem auto;">
+        All tracks licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" style="color:#aaa;">CC&nbsp;BY&nbsp;4.0</a> &nbsp;via <em>incompetech.com</em>
+      </p>
+    </div>
+
+    <p style="margin-top:2.5rem; font-size:0.9rem; color:#666;">
+      &copy;&nbsp;2025&nbsp;Trevor&nbsp;Liban&nbsp;
+    </p>
+  </div>
+</body>
+</html>

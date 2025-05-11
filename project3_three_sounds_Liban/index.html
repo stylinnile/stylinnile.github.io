@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FINAL BOARDING: A high-stakes mid-air mystery</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container start-menu">
+    <h1 class="title">FINAL BOARDING</h1>
+    <p class="subtitle">A high-stakes mid-air mystery</p>
+    <br><br>
+
+    <p class="description">
+      Somewhere above the clouds, an undercover air marshal has been murdered.<br>
+      Four passengers sit under suspicion—each with motive and means.<br>
+      Watch the briefing, sift the evidence, and decide who’s guilty before we land.
+    </p>
+    <br>
+
+    <h3 class="how-to-play">How&nbsp;to&nbsp;Play</h3>
+    <ul class="how-list">
+      <li>Click <strong>START</strong> to watch the intro briefing.</li>
+      <li>When the intro ends, pick the suspect you believe is the killer.</li>
+      <li>Watch their ending—then see if you were right in the final credits.</li>
+    </ul>
+    <br><br><br>
+
+    <button id="startBtn" class="btn btn-white">▶️ START</button>
+  </div>
+
+  <script>
+    document.getElementById("startBtn")
+      .addEventListener("click", () => {
+        window.location.href = "game.html";
+      });
+  </script>
+</body>
+</html>

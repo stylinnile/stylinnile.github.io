@@ -1,0 +1,198 @@
+/* styles.css */
+/* --- Page & Vignette --- */
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* charcoal gradient + vignette */
+  background: radial-gradient(
+      circle at center,
+      rgba(30, 30, 30, 1) 0%,
+      rgba(10, 10, 10, 1) 80%
+    ),
+    linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  color: #ddd;
+}
+
+/* Helper to hide until needed */
+.hidden {
+  display: none !important;
+}
+
+/* --- Main Panel --- */
+.container {
+  width: 90%;
+  max-width: 900px;
+  padding: 2rem;
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/* --- Video Container --- */
+.video-container {
+  height: 450px;               /* placeholder height */
+  margin-bottom: 2rem;
+  background: #222;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Make the video fill */
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* --- Buttons in One Line --- */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  white-space: nowrap;
+  overflow-x: auto;            /* in case very small screens */
+  padding-bottom: 0.5rem;
+}
+
+/* --- Base Button Style --- */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  font-size: 1rem;
+  border: 2px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  opacity: 0.9;
+}
+
+/* --- Muted Variants --- */
+.btn-white {
+  background: #f5f5f5;
+  color: #222;
+  border-color: #666;
+}
+.btn-white:hover {
+  background: #e0e0e0;
+  border-color: #888;
+}
+
+.btn-blue {
+  background: #336b8f;
+  color: #eef;
+  border-color: #245773;
+}
+.btn-blue:hover {
+  background: #2f5f7b;
+  border-color: #1e3f55;
+}
+
+.btn-red {
+  background: #8f2e2e;
+  color: #ffeaea;
+  border-color: #6b2323;
+}
+.btn-red:hover {
+  background: #7d2a2a;
+  border-color: #541b1b;
+}
+
+.btn-black {
+  background: #333;
+  color: #ddd;
+  border-color: #555;
+}
+.btn-black:hover {
+  background: #2a2a2a;
+  border-color: #444;
+}
+.play-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transform: none;
+/*  bottom: 1rem;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+  background: rgba(0,0,0,0.7);
+  border: 2px solid #555;
+  color: #eee;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s, background 0.2s;
+}
+
+.play-btn:hover {
+  opacity: 1;
+  background: rgba(30,30,30,0.9);
+}
+/* ——————————————————————— FLASHY START MENU TWEAKS ——————————————————————— */
+
+/* Animate & gradient the title */
+.start-menu .title {
+  font-size: 3.5rem;
+  letter-spacing: 0.1ch;
+  background: linear-gradient(90deg, #f8f8f2, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowText 3s ease-in-out infinite alternate;
+  margin-bottom: 0;              /* remove any extra bottom space */
+}
+
+@keyframes glowText {
+  from { text-shadow: 0 0 8px rgba(248,248,242,0.7); }
+  to   { text-shadow: 0 0 16px rgba(204,204,204,1); }
+}
+
+/* Pull subtitle up closer */
+.start-menu .subtitle {
+  margin-top: 0.25rem;
+  color: #e0e0e0;
+  font-size: 1.25rem;
+}
+
+/* Tweak description */
+.start-menu .description {
+  margin: 1.25rem auto;
+  color: #bbb;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  max-width: 600px;
+}
+
+/* How-to header */
+.start-menu .how-to-play {
+  margin: 1.5rem 0 0.5rem;
+  color: #ddd;
+  font-weight: bold;
+  letter-spacing: 0.05ch;
+}
+
+/* Center & indent the list bullets */
+.start-menu .how-list {
+  list-style-position: inside;
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  color: #aaa;
+}
+.start-menu .how-list li {
+  margin: 0.4rem 0;
+}
+
+/* Give the START button a tiny neon-glow on hover */
+.start-menu #startBtn:hover {
+  box-shadow: 0 0 12px rgba(255,255,255,0.5);
+  transform: scale(1.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
